@@ -1,0 +1,18 @@
+/* family font names - 
+font-family: "Acme", sans-serif; 400
+font-family: "Fredericka the Great", sans-serif; 400
+font-family: "Unica One", sans-serif; 400
+font-family: "Arsenal", sans-serif; 400 - 700
+font-family: "Khand", sans-serif; 300 - 700
+font-family: "Krub", sans-serif; 200 - 700
+font-family: "Karla", sans-serif; 200 - 800
+
+
+ */
+h1{
+font-family: "Unica One", sans-serif;
+font-weight: 400;
+font-size: 6em;
+letter-spacing: -4px;
+}
+/* font-variant-caps: small-caps; */
