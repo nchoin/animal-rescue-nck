@@ -9,10 +9,33 @@ font-family: "Karla", sans-serif; 200 - 800
 
 
  */
-h1{
-font-family: "Unica One", sans-serif;
-font-weight: 400;
-font-size: 6em;
-letter-spacing: -4px;
+:root {
+  --cream: #fefbef;
+  --white: #fefaf1;
+  --putty: #e5e5d9;
+  --dk-brown: #56382d;
+  --lt-brown:#A49393;
+  --lt-pink:#EED6D3;
+  --pink:#E8B4B8;
+  --lt-green:#E0E9D0;
+}
+body {
+  background: var(--dk-brown);
+}
+h1 {
+  /* font-family: "Unica One", sans-serif; */
+  font-family: "Fredericka the Great", sans-serif;
+  font-weight: 400;
+  font-size: 6em;
+  /* font-variant-caps: small-caps;  */
+  letter-spacing: -2px;
+  color: var(--lt-pink);
+}
+h2 {
+  font-family: "arsenal", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: var(--lt-green);
+  font-variant-caps: small-caps; 
 }
 /* font-variant-caps: small-caps; */
