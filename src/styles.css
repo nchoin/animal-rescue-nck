@@ -14,31 +14,31 @@ font-family: "Karla", sans-serif; 200 - 800
   --white: #fefaf1;
   --putty: #e5e5d9;
   --dk-brown: #56382d;
-  --lt-brown:#A49393;
-  --lt-pink:#EED6D3;
-  --pink:#E8B4B8;
-  --lt-green:#E0E9D0;
+  --lt-brown: #a49393;
+  --lt-pink: #eed6d3;
+  --pink: #e8b4b8;
+  --lt-green: #e0e9d0;
 }
 body {
   background: var(--lt-brown);
-  
 }
-.page-container{
-    max-width:90%;
-    margin:0 auto;
+.page-container {
+  max-width: 90%;
+  margin: 0 auto;
 }
-header{
-    text-align: center;
-    padding:50px;
+header {
+  text-align: center;
+  padding: 50px;
 }
-.hero{
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url("/images/lr-snuggle.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* padding: 60px; */
-    
-    border-radius: 5px;
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("/images/lr-snuggle.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* padding: 60px; */
+
+  border-radius: 5px;
 }
 
 h1 {
@@ -48,75 +48,79 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   color: var(--lt-pink);
-  margin:1px 0;
+  margin: 1px 0;
 }
 h2 {
   font-family: "arsenal", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   color: var(--lt-green);
-  font-variant-caps: small-caps; 
+  font-variant-caps: small-caps;
   margin: 2px 0;
 }
-h3{
-      font-family: "arsenal", sans-serif;
+h3 {
+  font-family: "arsenal", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   color: var(--lt-green);
-  font-variant-caps: small-caps; 
+  font-variant-caps: small-caps;
   margin: 10px 0 0;
- 
-  
 }
-header a{
-    color: var(--dk-brown);
-    background: var(--lt-pink);
-    padding:10px 15px;
-    border-radius: 10px;
-   margin: 20px auto 0;
-   display:block;
-   max-width: 100px;
-   text-decoration: none;
+.icon{
+    font-size: .6em;
+}
+header a {
+  color: var(--dk-brown);
+  background: var(--lt-pink);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 20px auto 0;
+  display: block;
+  max-width: 100px;
+  text-decoration: none;
+   font-family: "arsenal", sans-serif;
+   font-variant-caps: small-caps;
+   font-size: 1.1em;
+}
+p {
+  font-family: "arsenal", sans-serif;
+  color: var(--putty);
+}
+p a {
+  color: var(--pink);
+  font-weight: 600;
+}
 
-}
-p{
-    font-family: "arsenal", sans-serif;
-    color:var(--putty)
-}
-p a{
-    color: var(--pink);
-    font-weight: 600;
-}
-
-
- @media screen and (max-width: 775px) {
-    h1{
-      font-size: 2em;
-    }
-    h2{
-        font-size: 1em;
-    }
-    h3{
-        font-size: .6em;
-    }
+@media screen and (max-width: 775px) {
+  h1 {
+    font-size: 2em;
   }
- @media screen and (max-width: 400px) {
-    h1{
-      font-size: 1.7em;
-    }
-    h2{
-        font-size: .8em;
-    }
-    h3{
-        font-size: .6em;
-    }
-    header a{
-   font-size: .8em;
-    padding:8px 6px;
-    border-radius: 10px;
-   margin: 20px auto 0;
-   display:block;
-   max-width: 75px;
-
-}
+  h2 {
+    font-size: 1em;
   }
+  h3 {
+    font-size: 0.8em;
+  }
+  .icon{
+    font-size: .3em;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 0.8em;
+  }
+  h3 {
+    font-size: 0.6em;
+  }
+  header a {
+    font-size: 0.8em;
+    padding: 8px 6px;
+    border-radius: 10px;
+    margin: 20px auto 0;
+    display: block;
+    max-width: 75px;
+  }
+}
