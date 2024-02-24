@@ -83,33 +83,33 @@ header a {
   font-size: 1.1em;
   font-weight: 600;
 }
-/* Why-Rescue Section */
-.why-rescue {
+/* how-rescue Section */
+.how-rescue  {
   grid-gap: 30px;
   padding: 60px;
   background: var(--putty);
   border-radius: 5px;
 }
-.why-rescue img {
+.how-rescue img {
   max-width: 300px;
   display: block;
   margin: 0 auto;
 
 }
 
-.why-rescue h4{
+.how-rescue h4{
     color: var(--dk-brown);
     margin: 0 0 5px;
     font-variant-caps: small-caps;
 }
-.why-rescue h3 {
+.how-rescue h3 {
   font-family: "Fredericka the Great", sans-serif;
   font-size: 1.5em;
   color: var(--dk-brown);
   font-weight: 800;
   margin: 0;
 }
-.why-rescue p {
+.how-rescue p {
   font-size: 1em;
   color: var(--dk-brown);
   margin: 10px auto;
@@ -209,13 +209,13 @@ footer li {
   footer h3 {
     padding-top: 10px;
   }
-  .why-rescue img {
+  .how-rescue img {
     max-width: 200px;
   }
-  .why-rescue h3 {
+  .how-rescue h3 {
     text-align: center;
   }
-  .why-rescue p, h4 {
+  .how-rescue p, h4 {
     font-size: 1em;
     text-align: center;
     padding: 0 30px;
@@ -246,10 +246,10 @@ footer li {
     display: block;
     max-width: 75px;
   }
-  .why-rescue h3 {
+  .how-rescue h3 {
     font-size: 1.2em;
   }
-   .why-rescue p {
+   .how-rescue  p {
     font-size: .7em;
   }
 }
