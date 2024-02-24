@@ -28,7 +28,7 @@ body {
 }
 header {
   text-align: center;
-  padding: 50px;
+  padding: 100px;
 }
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
@@ -41,24 +41,26 @@ header {
   border-radius: 5px;
 }
 
-h1 {
+header h1 {
   /* font-family: "Unica One", sans-serif; */
   font-family: "Fredericka the Great", sans-serif;
   font-weight: 400;
   font-size: 3em;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   color: var(--pink);
   margin: 1px 0;
+  /* line-height: 2.0; */
 }
-h2 {
+header h2 {
   font-family: "arsenal", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.5em;
   color: var(--lt-green);
   font-variant-caps: small-caps;
   margin: 2px 0;
+  line-height: 2.5;
 }
-h3 {
+header h3 {
   font-family: "arsenal", sans-serif;
   font-weight: 400;
   font-size: 1.1em;
@@ -81,6 +83,7 @@ header a {
   font-family: "arsenal", sans-serif;
   font-variant-caps: small-caps;
   font-size: 1.1em;
+  font-weight: 600;
 }
 p {
   font-family: "arsenal", sans-serif;
@@ -94,27 +97,34 @@ p a {
   text-align: center;
 }
 @media screen and (max-width: 775px) {
-  h1 {
+  header h1 {
     font-size: 2em;
   }
-  h2 {
+  header h2 {
     font-size: 1em;
   }
-  h3 {
+  header h3 {
     font-size: 0.8em;
   }
   .icon {
     font-size: 0.3em;
   }
 }
+
+@media screen and (max-width:600px) {
+    header{
+        padding:50px 0;
+    }
+}
+
 @media screen and (max-width: 400px) {
-  h1 {
+  header h1 {
     font-size: 1.7em;
   }
-  h2 {
+  header h2 {
     font-size: 0.8em;
   }
-  h3 {
+  header h3 {
     font-size: 0.6em;
   }
   header a {
