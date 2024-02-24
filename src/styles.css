@@ -47,7 +47,7 @@ h1 {
   font-weight: 400;
   font-size: 3em;
   letter-spacing: -2px;
-  color: var(--lt-pink);
+  color: var(--pink);
   margin: 1px 0;
 }
 h2 {
@@ -61,13 +61,13 @@ h2 {
 h3 {
   font-family: "arsenal", sans-serif;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.1em;
   color: var(--lt-green);
   font-variant-caps: small-caps;
   margin: 10px 0 0;
 }
-.icon{
-    font-size: .6em;
+.icon {
+  font-size: 0.6em;
 }
 header a {
   color: var(--dk-brown);
@@ -78,19 +78,21 @@ header a {
   display: block;
   max-width: 100px;
   text-decoration: none;
-   font-family: "arsenal", sans-serif;
-   font-variant-caps: small-caps;
-   font-size: 1.1em;
+  font-family: "arsenal", sans-serif;
+  font-variant-caps: small-caps;
+  font-size: 1.1em;
 }
 p {
   font-family: "arsenal", sans-serif;
   color: var(--putty);
 }
 p a {
-  color: var(--pink);
+  color: var(--dk-brown);
   font-weight: 600;
 }
-
+.about-footer {
+  text-align: center;
+}
 @media screen and (max-width: 775px) {
   h1 {
     font-size: 2em;
@@ -101,8 +103,8 @@ p a {
   h3 {
     font-size: 0.8em;
   }
-  .icon{
-    font-size: .3em;
+  .icon {
+    font-size: 0.3em;
   }
 }
 @media screen and (max-width: 400px) {
