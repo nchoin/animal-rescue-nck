@@ -21,9 +21,10 @@ font-family: "Karla", sans-serif; 200 - 800
 }
 body {
   background: var(--lt-brown);
+  font-family: "arsenal", sans-serif;
 }
 .page-container {
-  max-width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 header {
@@ -52,7 +53,6 @@ header h1 {
   /* line-height: 2.0; */
 }
 header h2 {
-  font-family: "arsenal", sans-serif;
   font-weight: 600;
   font-size: 1.5em;
   color: var(--lt-green);
@@ -61,7 +61,6 @@ header h2 {
   line-height: 2.5;
 }
 header h3 {
-  font-family: "arsenal", sans-serif;
   font-weight: 400;
   font-size: 1.1em;
   color: var(--lt-green);
@@ -80,22 +79,79 @@ header a {
   display: block;
   max-width: 100px;
   text-decoration: none;
-  font-family: "arsenal", sans-serif;
   font-variant-caps: small-caps;
   font-size: 1.1em;
   font-weight: 600;
 }
-p {
-  font-family: "arsenal", sans-serif;
-  color: var(--putty);
+
+
+.footer-info {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/rescued-pets-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding: 50px 30px;
+  display:grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-column-gap:15px;
+margin-top: 10px;
 }
-p a {
+footer h3 {
+  color: var(--putty);
+  font-weight: 700;
+  font-size: 1.1em;
+  color: var(--lt-green);
+  font-variant-caps: small-caps;
+  margin:5px 0;
+}
+footer p {
+  color: var(--putty);
+  font-size: .8em;
+   margin:0;
+}
+
+footer p a{
+color:var(--lt-pink);
+text-decoration: none;
+font-weight: 600;
+}
+
+footer p a:hover{
+color:var(--pink);
+text-decoration: underline;
+}
+
+footer ul{
+    padding:0;
+    margin:0;
+}
+
+footer li{
+    list-style:none;
+    line-height: 1.5;
+    font-size: .8em;
+}
+.rescue-link-footer {
+  display: block;
+  text-decoration: none;
+  color: var(--cream);
+}
+.rescue-link-footer:hover{
+    text-decoration: underline;
+    font-weight: 600;
+    color: var(--pink);
+}
+.about-footer a {
   color: var(--dk-brown);
   font-weight: 600;
 }
+
 .about-footer {
   text-align: center;
 }
+
 @media screen and (max-width: 775px) {
   header h1 {
     font-size: 2em;
@@ -108,13 +164,20 @@ p a {
   }
   .icon {
     font-size: 0.3em;
-  }
+}
+.footer-info{
+        grid-template-columns: 1fr;
+        padding: 20px 10px;
+    }
+    footer h3 {
+        padding-top: 10px;
+    }
 }
 
-@media screen and (max-width:600px) {
-    header{
-        padding:50px 0;
-    }
+@media screen and (max-width: 600px) {
+  header {
+    padding: 50px 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
