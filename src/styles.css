@@ -27,8 +27,13 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-header {
+.text-center {
   text-align: center;
+}
+.img-responsive {
+  max-width: 100%;
+}
+header {
   padding: 100px;
 }
 .hero {
@@ -83,8 +88,24 @@ header a {
   font-size: 1.1em;
   font-weight: 600;
 }
+/* grids uniform formatting */
+.grid {
+  display: grid;
+  grid-column-gap: 15px;
+}
+.grid-3cols-1narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-2cols-same {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-4cols-same {
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  padding-top: 20px;
+}
 /* how-rescue Section */
-.how-rescue  {
+.how-rescue {
   grid-gap: 30px;
   padding: 60px;
   background: var(--putty);
@@ -94,13 +115,11 @@ header a {
   max-width: 300px;
   display: block;
   margin: 0 auto;
-
 }
-
-.how-rescue h4{
-    color: var(--dk-brown);
-    margin: 0 0 5px;
-    font-variant-caps: small-caps;
+.how-rescue h4 {
+  color: var(--dk-brown);
+  margin: 0 0 5px;
+  font-variant-caps: small-caps;
 }
 .how-rescue h3 {
   font-family: "Fredericka the Great", sans-serif;
@@ -115,15 +134,53 @@ header a {
   margin: 10px auto;
 }
 
-.grid {
-  display: grid;
-  grid-column-gap: 15px;
+/* rescue-cards section*/
+.rescue-cards {
+  background: var(--cream);
+  border-radius: 5px;
+  padding: 60px;
 }
-.grid-3cols-1narrow{
-    grid-template-columns: 1fr 2fr 2fr;
+.card {
+  background: var(--lt-pink);
+  border-radius: 5px;
 }
-.grid-2cols-same{
-    grid-template-columns: 1fr 1fr;
+
+.rescue-cards h4 {
+  color: var(--dk-brown);
+  margin: 0 0 5px;
+  font-variant-caps: small-caps;
+}
+.rescue-cards h3 {
+  font-family: "Fredericka the Great", sans-serif;
+  font-size: 1.5em;
+  color: var(--dk-brown);
+  font-weight: 800;
+  margin: 0;
+}
+.rescue-cards h5 {
+  color: var(--dk-brown);
+  margin: 20px 0 5px 0;
+}
+.rescue-cards p {
+  margin: 3px 10px;
+  color: var(--dk-brown);
+}
+.logo {
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.btn {
+  color: var(--cream);
+  background: var(--dk-brown);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 5px auto 10px;
+  display: block;
+  max-width: 100px;
+  text-decoration: none;
+  font-variant-caps: small-caps;
+  font-size: 0.8em;
+  font-weight: 600;
 }
 .footer-info {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -202,7 +259,7 @@ footer li {
   .icon {
     font-size: 0.3em;
   }
-  .grid{
+  .grid {
     grid-template-columns: 1fr;
     padding: 20px 10px;
   }
@@ -215,16 +272,35 @@ footer li {
   .how-rescue h3 {
     text-align: center;
   }
-  .how-rescue p, h4 {
+  .rescue-cards h3 {
+    text-align: center;
+  }
+  .how-rescue p,
+  h4 {
     font-size: 1em;
     text-align: center;
     padding: 0 30px;
   }
-}
+  .rescue-cards h4 {
+    margin-top: -30px;
+  }
+  .rescue-cards img {
+    margin-top: 0px;
+  }
 
+  .card {
+    margin-top: 20px;
+    background: var(--lt-pink);
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
 @media screen and (max-width: 600px) {
   header {
     padding: 50px 0;
+  }
+  .rescue-cards h4 {
+    margin-top: 0px;
   }
 }
 
@@ -249,7 +325,16 @@ footer li {
   .how-rescue h3 {
     font-size: 1.2em;
   }
-   .how-rescue  p {
-    font-size: .9em;
+  .rescue-cards h3 {
+    font-size: 1.2em;
+  }
+  .how-rescue p {
+    font-size: 0.9em;
+  }
+  .logo {
+    margin-top: 5px;
+  }
+  .rescue-cards {
+    padding: 30px;
   }
 }
