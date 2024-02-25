@@ -30,18 +30,8 @@ body {
 .text-center {
   text-align: center;
 }
-.img-responsive {
-width: 100%;
-}
-.card-footer{
-    margin-top:  10px;
-    margin: 0 auto;
-    
-}
-.embed {
-    aspect-ratio: 1/1;
-    width: 100%;
-}
+
+
 header {
   padding: 100px;
 }
@@ -113,12 +103,19 @@ header a {
   grid-column-gap: 10px;
   padding-top: 20px;
 }
+.grid-3cols-same {
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding-top: 20px;
+}
 /* how-rescue Section */
 .how-rescue {
   grid-gap: 30px;
   padding: 60px;
   background: var(--putty);
   border-radius: 5px;
+  margin-top: 10px;
 }
 .how-rescue img {
   max-width: 300px;
@@ -148,6 +145,8 @@ header a {
   background: var(--cream);
   border-radius: 5px;
   padding: 60px;
+  margin-top: 10px;
+  
 }
 .card {
   background: var(--lt-pink);
@@ -174,6 +173,7 @@ header a {
   margin: 3px 10px;
   color: var(--dk-brown);
 }
+
 .logo {
   border-radius: 5px;
   margin-top: 5px;
@@ -191,6 +191,47 @@ header a {
   font-size: 0.8em;
   font-weight: 600;
 }
+.card-footer{
+    margin-top:  10px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+/* gallery section */
+.gallery{
+  background: var(--lt-pink);
+  border-radius: 5px;
+  padding: 60px;
+  margin-top: 10px;
+}
+.gallery h4 {
+  color: var(--dk-brown);
+  margin: 0 0 5px;
+  font-variant-caps: small-caps;
+}
+.gallery h3 {
+  font-family: "Fredericka the Great", sans-serif;
+  font-size: 1.5em;
+  color: var(--dk-brown);
+  font-weight: 800;
+  margin: 0;
+}
+.gallery p {
+  margin: 3px 10px;
+  color: var(--dk-brown);
+}
+
+.img-responsive {
+max-width: 200px;
+border-radius: 10px;
+display:block;
+margin:0 auto;
+}
+.img-responsive:hover{
+    transform: scale(1.1);
+}
+
+
+/* footer section */
 .footer-info {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/images/rescued-pets-banner.jpg");
