@@ -229,6 +229,7 @@ filter: sepia(80%) brightness(80%);
 
 .img-responsive:hover{
     transform: scale(1.1);
+    filter:none;
 }
 
 
