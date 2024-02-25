@@ -100,12 +100,11 @@ header a {
 }
 .grid-4cols-same {
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 10px;
   padding-top: 20px;
 }
 .grid-3cols-same {
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
+  /* grid-column-gap: 10px; */
   grid-row-gap: 10px;
   padding-top: 20px;
 }
