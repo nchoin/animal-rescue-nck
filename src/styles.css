@@ -35,6 +35,8 @@ width: 100%;
 }
 .card-footer{
     margin-top:  10px;
+    margin: 0 auto;
+    
 }
 .embed {
     aspect-ratio: 1/1;
