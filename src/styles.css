@@ -225,7 +225,9 @@ max-width: 200px;
 border-radius: 10px;
 display:block;
 margin:0 auto;
+filter: sepia(80%) brightness(80%);
 }
+
 .img-responsive:hover{
     transform: scale(1.1);
 }
